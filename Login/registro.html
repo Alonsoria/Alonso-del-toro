@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registro.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="formulario" action="">
+    <legend>Datos Personales</legend>
+    <div class="data">
+        <label for="name">Nombre Completo</label>
+        <input type="text" name="name" placeholder="Nombre Completo" required>
+        <br><br>
+        <label for="tel">Numero Telefonico</label>
+        <input type="number" name="tel" placeholder="123-456-7890"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required >
+        <br><br>
+        <label for="correo">Corre electrónico</label>
+        <input type="email" name="correo" placeholder="correo@email.com" >
+        <br><br>
+        <label for="contraseña">Contraseña</label>
+        <input class="form" type="password" name="contraseña" minlength="8" maxlength="15" placeholder="Minimo 8 caracteres">
+        <p id="note">Es necesario ingresar una direción de correo electronico para asi poder enviar la confirmacion de reservacion</p>
+        <br><br>
+    </div>
+    <div class="enviar">
+        <form action="">
+            <a class="boton" href="../index.html">Enviar</a>
+        </form>
+    </div>
+
+</form>
+</body>
+</html>
